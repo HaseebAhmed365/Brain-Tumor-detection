@@ -1,0 +1,57 @@
+import keras
+import tensorflow as tf
+from keras.layers import Conv2D,MaxPooling2D,Dense,Flatten,Dropout
+from keras.preprocessing.image import ImageDataGenerator
+from keras.optimizers.legacy import Adam
+from keras.models import Sequential
+
+train_ds="Link of training dataset"
+test_ds="Link of testing dataset"
+
+train_Data_gen=ImageDataGenerator(rescale=1./255)
+test_Data_gen=ImageDataGenerator(rescale=1./255)
+
+train_ds_generator=train_Data_gen.flow_from_directory(
+    train_ds,
+    target_size=(32,32),
+    batch_size=32,
+    class_mode='categorical'
+)
+
+test_ds_generator=test_Data_gen.flow_from_directory(
+    test_ds,
+    target_size=(32,32),
+    batch_size=32,
+    class_mode='categorical'
+)
+
+from keras import layers
+
+Data_agument=Sequential([
+    layers.RandomRotation(0.4),
+    layers.RandomFlip("horizontal_and_vertical")
+])
+
+model=Sequential([
+    layers.Input(shape=(32,32,3)),
+    Data_agument,
+    layers.Conv2D(16,kernel_size=(3,3),activation="relu"),
+    layers.Conv2D(32,kernel_size=(3,3),activation="relu"),
+    layers.MaxPooling2D(pool_size=(2,2)),
+    layers.Dropout(0.25),
+
+
+    layers.Conv2D(64,kernel_size=(3,3),activation="relu"),
+    layers.MaxPooling2D(pool_size=(2,2)),
+    layers.Conv2D(128,kernel_size=(3,3),activation="relu"),
+    layers.MaxPooling2D(pool_size=(2,2)),
+    layers.Dropout(0.25),
+
+    layers.Flatten(),
+    layers.Dense(1024,activation="relu"),
+    layers.Dense(4,activation="softmax"),
+])
+
+model.compile(loss="categorical_crossentropy",optimizer=Adam(lr=0.0001,decay=1e-3),metrics=['accuracy'])
+
+model_info=model.fit(train_ds_generator,epochs=300,validation_data=test_ds_generator)
