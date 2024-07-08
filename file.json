@@ -1,0 +1,30 @@
+{
+"Glioma_Tumor":
+{
+"Description":"Glioma is a tumor that develops from glial cells in the brain or spinal cord. These tumors can vary in aggressiveness and are classified based on the specific type of glial cell they affect, such as astrocytes or oligodendrocytes. Gliomas can cause various neurological issues depending on their location and size. Diagnosis usually involves imaging tests like MRI or CT scans and a biopsy. The treatment approach and prognosis depend on the tumor's type, grade, and location.",
+"Causes":"The exact causes of glioma tumors are not fully known. However, potential risk factors include genetic mutations, exposure to high doses of radiation, and certain inherited conditions. Age and gender might also play a role. Research on other factors like electromagnetic fields and chemical exposures is ongoing but inconclusive. In many cases, the cause of gliomas remains unknown.",
+"Symptoms":"Symptoms of glioma tumors include persistent headaches, seizures, nausea, changes in vision or hearing, memory issues, personality changes, weakness or numbness, speech difficulties, and balance problems. Consulting a healthcare professional for proper evaluation is essential if these symptoms persist.",
+"Treatment":"Treatment for glioma tumors involves surgery to remove the tumor, followed by a combination of radiation therapy and chemotherapy. Targeted therapies and participation in clinical trials may also be options. Supportive care and rehabilitation help manage symptoms and improve quality of life. Treatment plans are personalized based on the tumor type, size, and patient's overall health. Consult a doctor for further information."
+},
+"Meningioma_Tumor":
+{
+"Description":"Meningioma is a common type of brain tumor that originates in the meninges, the layers of tissue covering the brain and spinal cord. These tumors are usually slow-growing and often benign. The causes of meningiomas are not fully understood. Diagnosis involves imaging tests such as MRI or CT scans.",
+"Causes":"The exact cause of meningioma tumors is unknown. However, factors such as age, gender (more common in women), hormonal influences, genetic syndromes, exposure to radiation, head trauma, and hormone replacement therapy might contribute to their development. Many cases occur without identifiable risk factors.",
+"Symptoms":"Meningioma symptoms can include persistent headaches, seizures, vision problems, speech difficulties, weakness, personality changes, balance issues, and memory problems. Consulting a healthcare professional for evaluation is essential if these symptoms persist.",
+"Treatment":"Meningioma treatment options include observation, surgery, and radiation therapy. The choice depends on the tumor's size, location, and symptoms. Medications can also be used in some cases. Treatment is personalized based on the individual's condition and needs. Consult a doctor for further information."
+},
+"No_Tumor":
+{
+"Description":"When there is no tumor present, it means there are no abnormal growths or masses in the affected area of the body. In medical terms, this signifies the absence of any localized, uncontrolled cell growth that characterizes tumors. Absence of a tumor is typically confirmed through medical imaging tests such as MRI, CT scans, or biopsies, which show no evidence of abnormal tissue or growths in the examined area.",
+"Causes":"NA",
+"Symptoms":"NA",
+"Treatment":"NA"
+},
+"Pituitary_Tumor":
+{
+"Description":"A pituitary tumor is a growth in the pituitary gland. Without treatment, it may grow slowly or stay the same. Many small tumors don't cause symptoms. Treatment is based on tumor size, symptoms, and hormone effects.",
+"Causes":"The causes of pituitary tumors are often unknown. Genetic factors, specific syndromes like MEN1, radiation exposure, hormonal imbalances, and unknown factors might contribute. However, most cases occur spontaneously without a known cause.",
+"Symptoms":"Pituitary tumor symptoms include vision problems, headaches, hormonal changes, fatigue, nausea, weakness, frequent urination, and unexplained weight changes. Some tumors cause no symptoms and are discovered incidentally. Consulting a healthcare professional is crucial for proper evaluation.",
+"Treatment":"Pituitary tumor treatment options include medication for hormone balance, surgery to remove the tumor, or radiation therapy for persistent or inoperable cases. Treatment choice depends on tumor size, type, and symptoms. Consult a doctor for further information."
+}
+}
